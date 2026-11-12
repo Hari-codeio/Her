@@ -1,0 +1,26 @@
+# Local toolchain (JDK, Gradle, Android SDK) downloaded for builds
+.toolchain/
+
+# Android / Gradle
+android/.gradle/
+android/build/
+android/**/build/
+android/local.properties
+android/.idea/
+android/*.iml
+android/**/*.iml
+android/captures/
+android/.kotlin/
+
+# Python
+server/.venv/
+server/data/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+.env
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/

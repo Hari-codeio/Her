@@ -1,0 +1,16 @@
+# Pinned to the versions installed and tested in server/.venv (Python 3.13).
+fastapi==0.162.5
+starlette==1.10.0
+uvicorn[standard]==0.54.0
+pydantic==2.14.3
+# 2.0.x on purpose: its compiled extensions are optional (pure-Python fallback), while 2.1's are
+# mandatory and were blocked by Windows Application Control on the dev machine.
+SQLAlchemy==2.0.57
+python-multipart==0.0.33
+cryptography==50.0.2
+anthropic==2.8.0
+
+# tests (Starlette's TestClient uses httpx2; anthropic 2.x is also built on httpx2)
+pytest==9.2.0
+httpx==0.28.1
+httpx2==2.16.0
